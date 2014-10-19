@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ReferenceDatabaseCreator.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace ReferenceDatabaseCreator
 {
     public static class DataHandler
     {
-        public static List<WorkoutPlan> workoutPlans = new List<WorkoutPlan>();
+        public static List<WorkoutPlanViewModel> workoutPlans = new List<WorkoutPlanViewModel>();
 
         /// <summary>
         /// Populates a list of workouts based on the contents of workouts.txt
@@ -22,16 +23,11 @@ namespace ReferenceDatabaseCreator
             
             foreach (string workout in workouts.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries)) 
             {
-                DataHandler.workoutPlans.Add(new WorkoutPlan
+                DataHandler.workoutPlans.Add(new WorkoutPlanViewModel
                 {
                     Name = workout.Trim()
                 });
             }
         }
-    }
-
-    public class WorkoutPlan
-    {
-        public string Name { get; set; }
     }
 }
