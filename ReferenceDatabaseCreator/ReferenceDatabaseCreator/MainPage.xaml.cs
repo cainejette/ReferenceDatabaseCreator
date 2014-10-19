@@ -43,7 +43,7 @@ namespace ReferenceDatabaseCreator
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            // TODO: Prepare page for display here.
+            DataHandler.LoadWorkoutPlans();
 
             // TODO: If your application contains multiple pages, ensure that you are
             // handling the hardware Back button by registering for the
@@ -52,20 +52,8 @@ namespace ReferenceDatabaseCreator
             // this event is handled for you.
         }
 
-        private async void createDatabase_Click(object sender, RoutedEventArgs e)
+        private void readFile_Click(object sender, RoutedEventArgs e)
         {
-            var folder = Windows.Storage.ApplicationData.Current.LocalFolder;
-            StorageFile file = await folder.CreateFileAsync("WorkoutPlans.txt", CreationCollisionOption.ReplaceExisting);
-            await FileIO.WriteTextAsync(file, "Insanity");
-            
-        }
-
-        private async void readFile_Click(object sender, RoutedEventArgs e)
-        {
-            var folder = Windows.Storage.ApplicationData.Current.LocalFolder;
-            StorageFile file = await folder.GetFileAsync("workouts.txt");
-            string result = await FileIO.ReadTextAsync(file);
-            textBlock.Text = result;
         }
     }
 }

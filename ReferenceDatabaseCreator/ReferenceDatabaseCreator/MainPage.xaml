@@ -9,17 +9,6 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:Name="createDatabase" 
-                HorizontalAlignment="Center"
-                Click="createDatabase_Click" Margin="110,143,131,440">Write file</Button>
-        <Button x:Name="readFile"
-                HorizontalAlignment="Center"
-                Click="readFile_Click">Read file</Button>
-        <TextBlock x:Name="textBlock"
-                   HorizontalAlignment="Left" 
-                   TextWrapping="Wrap" 
-                   Text="TextBlock" 
-                   VerticalAlignment="Top" Margin="157,386,0,0"/>
-
+        
     </Grid>
 </Page>
