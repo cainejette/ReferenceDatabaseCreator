@@ -1,4 +1,5 @@
-﻿using SQLite;
+﻿using ReferenceDatabaseCreator.Common;
+using SQLite;
 using SQLiteNetExtensions.Attributes;
 using System;
 using System.Collections.Generic;
@@ -43,6 +44,9 @@ namespace ReferenceDatabaseCreator
         {
             DataHandler.LoadWorkoutPlans();
             
+            // preloading since doing so in the LoadState doesn't work
+            DataHandler.LoadWorkoutList("Insanity");
+            
             this.DataContext = DataHandler.workoutPlans;
 
             // TODO: If your application contains multiple pages, ensure that you are
@@ -50,6 +54,13 @@ namespace ReferenceDatabaseCreator
             // Windows.Phone.UI.Input.HardwareButtons.BackPressed event.
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Button selectedButton = sender as Button;
+            string selection = (string)selectedButton.Content;
+            Frame.Navigate(typeof(BasicPage1), selection);
         }
     }
 }
