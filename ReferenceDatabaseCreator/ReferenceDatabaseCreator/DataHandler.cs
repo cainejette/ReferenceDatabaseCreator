@@ -11,7 +11,7 @@ namespace ReferenceDatabaseCreator
     public static class DataHandler
     {
         public static List<WorkoutPlanViewModel> workoutPlans = new List<WorkoutPlanViewModel>();
-
+        
         /// <summary>
         /// Populates a list of workouts based on the contents of workouts.txt
         /// </summary>

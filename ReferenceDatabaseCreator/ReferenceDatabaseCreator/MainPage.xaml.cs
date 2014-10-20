@@ -27,13 +27,11 @@ namespace ReferenceDatabaseCreator
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        SQLiteConnection _db; 
         public MainPage()
         {
             this.InitializeComponent();
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
-
         }
 
         /// <summary>
@@ -44,16 +42,14 @@ namespace ReferenceDatabaseCreator
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             DataHandler.LoadWorkoutPlans();
+            
+            this.DataContext = DataHandler.workoutPlans;
 
             // TODO: If your application contains multiple pages, ensure that you are
             // handling the hardware Back button by registering for the
             // Windows.Phone.UI.Input.HardwareButtons.BackPressed event.
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
-        }
-
-        private void readFile_Click(object sender, RoutedEventArgs e)
-        {
         }
     }
 }
