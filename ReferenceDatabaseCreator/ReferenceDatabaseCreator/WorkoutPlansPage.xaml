@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="ReferenceDatabaseCreator.MainPage"
+    x:Class="ReferenceDatabaseCreator.WorkoutPlansPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:ReferenceDatabaseCreator"

@@ -26,9 +26,9 @@ namespace ReferenceDatabaseCreator
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class WorkoutPlansPage : Page
     {
-        public MainPage()
+        public WorkoutPlansPage()
         {
             this.InitializeComponent();
 
@@ -60,7 +60,7 @@ namespace ReferenceDatabaseCreator
         {
             Button selectedButton = sender as Button;
             string selection = (string)selectedButton.Content;
-            Frame.Navigate(typeof(BasicPage1), selection);
+            Frame.Navigate(typeof(WorkoutListPage), selection);
         }
     }
 }
