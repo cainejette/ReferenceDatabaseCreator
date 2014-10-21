@@ -1,0 +1,63 @@
+1: Fit Test
+2: Plyometric Cardio Circuit
+3: Cardio Power & Resistance
+4: Cardio Recovery
+5: Pure Cardio
+6: Plyometric Cardio Circuit
+7: Rest
+8: Cardio Power & Resistance
+9: Pure Cardio
+10: Plyometric Cardio Circuit
+11: Cardio Recovery
+12: Cardio Power & Resistance
+13: Pure Cardio & Cardio Abs
+14: Rest
+15: Fit Test
+16: Plyometric Cardio Circuit
+17: Pure Cardio & Cardio Abs
+18: Cardio Recovery
+19: Cardio Power & Resistance
+20: Plyometric Cardio Circuit
+21: Rest
+22: Pure Cardio & Cardio Abs
+23: Cardio Power & Resistance
+24: Plyometric Cardio Circuit
+25: Cardio Recovery
+26: Pure Cardio & Cardio Abs
+27: Plyometric Cardio Circuit
+28: Rest
+29: Core Cardio & Balance
+30: Core Cardio & Balance
+31: Core Cardio & Balance
+32: Core Cardio & Balance
+33: Core Cardio & Balance
+34: Core Cardio & Balance
+35: Rest
+36: Fit Test & MAX Interval Circuit
+37: MAX Interval Plyo
+38: MAX Cardio Conditioning
+39: MAX Recovery
+40: MAX Interval Circuit
+41: Max Interval Plyo
+42: Rest
+43: MAX Cardio Conditioning
+44: MAX Interval Circuit
+45: MAX Interval Plyo
+46: MAX Recovery
+47: MAX Cardio & Cardio Abs
+48: Core Cardio & Balance
+49: Rest
+50: Fit Test & MAX Interval Circuit
+51: MAX Interval Plyo
+52: MAX Cardio & Cardio Abs
+53: MAX Recovery
+54: MAX Interval Circuit
+55: Core Cardio & Balance
+56: Rest
+57: MAX Interval Plyo
+58: MAX Cardio & Cardio Abs
+59: MAX Interval Circuit
+60: Core Cardio & Balance
+61: MAX Interval Plyo
+62: MAX Cardio & Cardio Abs
+63: Rest
